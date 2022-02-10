@@ -71,3 +71,21 @@ java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
 2022-02-11 02:41:23.052  WARN 48970 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2022-02-11 02:41:23.268  INFO 48970 --- [restartedMain] c.b.e.EmployeePayrollApp                 : Started EmployeePayrollApp in 1.922 seconds (JVM running for 2.367)
 2022-02-11 02:41:23.271  INFO 48970 --- [restartedMain] c.b.e.EmployeePayrollApp                 : Employee Payroll App Started
+2022-02-11 03:37:33.791  INFO 50899 --- [restartedMain] c.b.e.EmployeePayrollApp                 : Starting EmployeePayrollApp using Java 17.0.1 on dell-Latitude-5490 with PID 50899 (/home/dell/BridgeLabz/spring projects/target/classes started by dell in /home/dell/BridgeLabz/spring projects)
+2022-02-11 03:37:33.792 DEBUG 50899 --- [restartedMain] c.b.e.EmployeePayrollApp                 : Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-02-11 03:37:33.793  INFO 50899 --- [restartedMain] c.b.e.EmployeePayrollApp                 : The following profiles are active: dev
+2022-02-11 03:37:35.177  WARN 50899 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-11 03:37:35.391  INFO 50899 --- [restartedMain] c.b.e.EmployeePayrollApp                 : Started EmployeePayrollApp in 1.849 seconds (JVM running for 2.308)
+2022-02-11 03:37:35.394  INFO 50899 --- [restartedMain] c.b.e.EmployeePayrollApp                 : Employee Payroll App Started
+2022-02-11 03:43:24.230  INFO 51113 --- [restartedMain] c.b.e.EmployeePayrollApp                 : Starting EmployeePayrollApp using Java 17.0.1 on dell-Latitude-5490 with PID 51113 (/home/dell/BridgeLabz/spring projects/target/classes started by dell in /home/dell/BridgeLabz/spring projects)
+2022-02-11 03:43:24.231 DEBUG 51113 --- [restartedMain] c.b.e.EmployeePayrollApp                 : Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-02-11 03:43:24.232  INFO 51113 --- [restartedMain] c.b.e.EmployeePayrollApp                 : The following profiles are active: dev
+2022-02-11 03:43:25.646  WARN 51113 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-11 03:43:25.867  INFO 51113 --- [restartedMain] c.b.e.EmployeePayrollApp                 : Started EmployeePayrollApp in 1.891 seconds (JVM running for 2.318)
+2022-02-11 03:43:25.869  INFO 51113 --- [restartedMain] c.b.e.EmployeePayrollApp                 : Employee Payroll App Started DEV Environment
+2022-02-11 03:43:51.434  INFO 51226 --- [restartedMain] c.b.e.EmployeePayrollApp                 : Starting EmployeePayrollApp using Java 17.0.1 on dell-Latitude-5490 with PID 51226 (/home/dell/BridgeLabz/spring projects/target/classes started by dell in /home/dell/BridgeLabz/spring projects)
+2022-02-11 03:43:51.435 DEBUG 51226 --- [restartedMain] c.b.e.EmployeePayrollApp                 : Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-02-11 03:43:51.435  INFO 51226 --- [restartedMain] c.b.e.EmployeePayrollApp                 : The following profiles are active: dev
+2022-02-11 03:43:52.822  WARN 51226 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-11 03:43:53.052  INFO 51226 --- [restartedMain] c.b.e.EmployeePayrollApp                 : Started EmployeePayrollApp in 1.879 seconds (JVM running for 2.382)
+2022-02-11 03:43:53.055  INFO 51226 --- [restartedMain] c.b.e.EmployeePayrollApp                 : Employee Payroll App Started in DEV Environment
