@@ -1,2 +1,7 @@
-package com.bridegelabz.employeepayrollapp.repository;public interface EmployeePayrollRepository {
+package com.bridegelabz.employeepayrollapp.repository;
+
+import com.bridegelabz.employeepayrollapp.entity.EmployeePayrollData;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface EmployeePayrollRepository extends JpaRepository<EmployeePayrollData, Integer> {
 }

@@ -3,6 +3,9 @@ package com.bridegelabz.employeepayrollapp.services;
 import com.bridegelabz.employeepayrollapp.dto.EmployeePayrollDTO;
 import com.bridegelabz.employeepayrollapp.entity.EmployeePayrollData;
 import com.bridegelabz.employeepayrollapp.exceptions.EmployeePayrollException;
+import com.bridegelabz.employeepayrollapp.repository.EmployeePayrollRepository;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -10,7 +13,11 @@ import java.util.List;
 
 //Adding the ability for the Services Layer to store the Employee Payroll Data
 @Service
+@Slf4j
 public class EmployeePayrollService implements IEmployeePayrollService{
+
+    @Autowired
+    private EmployeePayrollRepository employeePayrollRepository;
 
     List<EmployeePayrollData> employeePayrollList = new ArrayList<>();
 
@@ -30,8 +37,9 @@ public class EmployeePayrollService implements IEmployeePayrollService{
     public EmployeePayrollData createEmployeePayrollData(EmployeePayrollDTO employeePayrollDTO) {
         EmployeePayrollData empData = null;
         empData = new EmployeePayrollData(employeePayrollList.size()+1, employeePayrollDTO);
+        log.debug("Emp Data: "+empData.toString());
         employeePayrollList.add(empData);
-        return empData;
+        return employeePayrollRepository.save(empData);
     }
 
     @Override
