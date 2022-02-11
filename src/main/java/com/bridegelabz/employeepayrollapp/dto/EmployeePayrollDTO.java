@@ -31,6 +31,6 @@ public class EmployeePayrollDTO {
     public String profilePic;
 
     @NotNull(message = "department cannot Not be Empty")
-    public List<String> department;
+    public List<String> departments;
 
 }

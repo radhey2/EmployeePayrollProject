@@ -8,11 +8,11 @@ import java.util.List;
 public interface IEmployeePayrollService {
     List<EmployeePayrollData> getEmployeePayrollData();
 
-    EmployeePayrollData getEmployeePayrollDataById(int empId);
+    EmployeePayrollData getEmployeePayrollDataById(long empId);
 
     EmployeePayrollData createEmployeePayrollData(EmployeePayrollDTO employeePayrollDTO);
 
-    EmployeePayrollData updateEmployeePayrollData(int empId,EmployeePayrollDTO employeePayrollDTO);
+    EmployeePayrollData updateEmployeePayrollData(long empId,EmployeePayrollDTO employeePayrollDTO);
 
-    void deleteEmployeePayrollData(int empId);
+    void deleteEmployeePayrollData(long empId);
 }

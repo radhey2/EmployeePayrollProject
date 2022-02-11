@@ -27,7 +27,7 @@ public class EmployeePayrollService implements IEmployeePayrollService{
     }
 
     @Override
-    public EmployeePayrollData getEmployeePayrollDataById(int empId) {
+    public EmployeePayrollData getEmployeePayrollDataById(long empId) {
         return employeePayrollRepository.findById(empId).orElseThrow(() ->
                 new EmployeePayrollException("Employee with employeeId:"+empId+" does not exist...!!!"));
 
@@ -42,14 +42,14 @@ public class EmployeePayrollService implements IEmployeePayrollService{
     }
 
     @Override
-    public EmployeePayrollData updateEmployeePayrollData(int empId, EmployeePayrollDTO employeePayrollDTO) {
+    public EmployeePayrollData updateEmployeePayrollData(long empId, EmployeePayrollDTO employeePayrollDTO) {
         EmployeePayrollData empData = this.getEmployeePayrollDataById(empId);
         empData.updateEmployeePayrollData(employeePayrollDTO);
         return employeePayrollRepository.save(empData);
     }
 
     @Override
-    public void deleteEmployeePayrollData(int empId) {
+    public void deleteEmployeePayrollData(long empId) {
         EmployeePayrollData empData = this.getEmployeePayrollDataById(empId);
         employeePayrollRepository.delete(empData);
     }
