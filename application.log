@@ -408,3 +408,10 @@ Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo can
 2022-02-11 05:44:55.455  INFO 54997 --- [restartedMain] c.b.e.EmployeePayrollApp                 : Employee Payroll App Started in DEV Environment
 2022-02-11 05:44:55.456  INFO 54997 --- [restartedMain] c.b.e.EmployeePayrollApp                 : Employee payroll DB User is payrolluser
 2022-02-11 05:45:47.206  WARN 54997 --- [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.bridegelabz.employeepayrollapp.exceptions.EmployeePayrollException: Employee Not Found]
+2022-02-11 10:18:28.895  INFO 57632 --- [restartedMain] c.b.e.EmployeePayrollApp                 : Starting EmployeePayrollApp using Java 17.0.1 on dell-Latitude-5490 with PID 57632 (/home/dell/BridgeLabz/spring projects/target/classes started by dell in /home/dell/BridgeLabz/spring projects)
+2022-02-11 10:18:28.896 DEBUG 57632 --- [restartedMain] c.b.e.EmployeePayrollApp                 : Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-02-11 10:18:28.897  INFO 57632 --- [restartedMain] c.b.e.EmployeePayrollApp                 : The following profiles are active: dev
+2022-02-11 10:18:30.427  WARN 57632 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-11 10:18:30.655  INFO 57632 --- [restartedMain] c.b.e.EmployeePayrollApp                 : Started EmployeePayrollApp in 2.04 seconds (JVM running for 2.559)
+2022-02-11 10:18:30.657  INFO 57632 --- [restartedMain] c.b.e.EmployeePayrollApp                 : Employee Payroll App Started in DEV Environment
+2022-02-11 10:18:30.658  INFO 57632 --- [restartedMain] c.b.e.EmployeePayrollApp                 : Employee payroll DB User is payrolluser
