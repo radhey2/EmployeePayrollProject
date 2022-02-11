@@ -32,11 +32,11 @@ public class EmployeePayrollData {
 
 
     public EmployeePayrollData() { }
-    public EmployeePayrollData(long id, EmployeePayrollDTO employeePayrollDTO){
-        this.updateEmployeePayrollData(id, employeePayrollDTO);
+    public EmployeePayrollData(EmployeePayrollDTO employeePayrollDTO){
+        this.updateEmployeePayrollData(employeePayrollDTO);
     }
 
-    public void updateEmployeePayrollData(long id, EmployeePayrollDTO employeePayrollDTO) {
+    public void updateEmployeePayrollData(EmployeePayrollDTO employeePayrollDTO) {
         this.employeeId = atomicLong.incrementAndGet();
         this.name = employeePayrollDTO.name;
         this.salary = employeePayrollDTO.salary;
