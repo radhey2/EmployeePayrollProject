@@ -15,6 +15,7 @@ import java.util.List;
 
 //Introducing Service Layer in EmployeePayrollApp
 
+@CrossOrigin(allowedHeaders = "*", origins = "*")
 @RestController
 @RequestMapping("/employeepayrollservice")
 public class EmployeePayrollController {
@@ -22,7 +23,7 @@ public class EmployeePayrollController {
     @Autowired
     private IEmployeePayrollService employeePayrollService;
 
-    @RequestMapping(value = {"","/","/get"})
+    @GetMapping(value = {"","/","/get"})
     public ResponseEntity<ResponseDTO>  getEmployeePayrollData(){
         List<EmployeePayrollData> empList = null;
         empList = employeePayrollService.getEmployeePayrollData();
